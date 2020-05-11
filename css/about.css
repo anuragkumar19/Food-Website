@@ -1,0 +1,143 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* css reset and set font  */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu', 'Baloo Bhaina 2', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* designing our nav bar  */
+
+#navcontainer a {
+    color: white;
+}
+
+#navcontainer a :hover {
+    background: #000;
+    border-radius: 0.5cm;
+}
+
+#navbar {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #f5a81e;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    width: 36px;
+    height: 36px;
+    padding: 2px 10px;
+}
+
+#navcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navitem {
+    padding: 20px 15px;
+}
+
+#navitem-2 {
+    border-bottom: 3px solid black;
+}
+
+#navitem-2:hover {
+    background-color: #f5a81e !important;
+    border-radius: 0 !important;
+}
+
+
+/* making navbar responsive  */
+
+@media(max-width:410px) {
+    .navitem {
+        padding: 10px 5px;
+    }
+    #navbar {
+        display: block;
+    }
+    #logo {
+        display: block;
+        margin: auto;
+    }
+    #navcontainer a :hover {
+        background: #000;
+        border-radius: 0.25cm;
+    }
+}
+
+
+/* about us designing  */
+
+body {
+    background: url("../res/about2.jpg");
+}
+
+.primeseconary {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    background: url("../res/about1.jpg");
+    background-position: center center;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2cm 0;
+    font-family: cursive;
+    font-style: italic;
+}
+
+#aboutpara {
+    font-size: 2rem;
+    border: 3px solid gray;
+    border-radius: 1cm;
+    padding: 1cm;
+    width: 90vw;
+    margin: 1cm auto;
+    color: white;
+    background-color: #00000070;
+}
+
+@media(max-width:820px) {
+    #aboutpara {
+        width: 80vw;
+        padding: 0.3cm
+    }
+}
+
+@media(max-width:400px) {
+    #aboutpara {
+        width: 80vw;
+    }
+}
+
+
+/* footer  */
+
+#footer {
+    background-color: black;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}

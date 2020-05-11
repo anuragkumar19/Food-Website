@@ -1,0 +1,347 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* css reset and set font  */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu', 'Baloo Bhaina 2', cursive;
+}
+
+
+/* hyperlink underline removal and color change of link  */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* universal classes  */
+
+.textcenter {
+    text-align: center;
+}
+
+
+/* designing our nav bar  */
+
+#navcontainer a {
+    color: white;
+}
+
+#navcontainer a :hover {
+    background: #000;
+    border-radius: 0.5cm;
+}
+
+#navbar {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #f5a81e;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+}
+
+#logo {
+    width: 36px;
+    height: 36px;
+    padding: 2px 10px;
+}
+
+#navcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navitem {
+    padding: 20px 15px;
+}
+
+#navitem-1 {
+    border-bottom: 3px solid black;
+}
+
+#navitem-1:hover {
+    background-color: #f5a81e !important;
+    border-radius: 0 !important;
+}
+
+
+/* making navbar responsive  */
+
+@media(max-width:410px) {
+    .navitem {
+        padding: 10px 5px;
+    }
+    #navbar {
+        display: block;
+    }
+    #logo {
+        display: block;
+        margin: auto;
+    }
+    #navcontainer a :hover {
+        background: #000;
+        border-radius: 0.25cm;
+    }
+}
+
+
+/* creating sideshow  and designing it. */
+
+.sideshow {
+    background-position: center center;
+    height: 400px;
+    animation: slideshow 16s infinite;
+    width: 97vw;
+    border: 5px solid #ffe8a9;
+    border-radius: 0.5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu';
+}
+
+@keyframes slideshow {
+    0% {
+        background: url("../res/food2.jpg");
+    }
+    25% {
+        background: url("../res/food5.jpg");
+    }
+    50% {
+        background: url("../res/food4.jpg");
+    }
+    75% {
+        background: url("../res/food6.jpg");
+    }
+    100% {
+        background: url("../res/food1.jpg");
+    }
+}
+
+
+/* designing welcomenotes  */
+
+.welheading {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.welparagraph {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* designing cards  */
+
+#cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 32vw;
+    margin: 4px;
+    border: 2px solid #fa6c6c;
+    background-color: wheat;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 19px;
+}
+
+.cardimg {
+    width: 25vw;
+    height: 25vw;
+    display: block;
+    margin: auto;
+}
+
+.orderbtn {
+    display: block;
+    margin: auto;
+    background: orange;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid darkkhaki;
+    box-shadow: none;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+@media(max-width:600px) {
+    #cardcontainer {
+        display: block;
+    }
+    .card {
+        width: 96vw;
+        margin: 2vw;
+    }
+}
+
+
+/* Designisg notes  */
+
+#getcustomer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#choclatatecupimg {
+    width: 40vw;
+    border-radius: 1cm;
+}
+
+.headingofgetcustom {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#getcustompara {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#gtcrd-1 {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-top-left-radius: 0.5cm;
+    border-bottom-left-radius: 0.5cm;
+    padding: 12px;
+    background-color: #ffcb3aab;
+}
+
+@media(max-width:920px) {
+    #getcustomer {
+        flex-direction: column-reverse;
+        border: 2px solid peachpuff;
+        border-radius: 1cm;
+    }
+    #gtcrd-1 {
+        border-right: 3px solid black;
+    }
+    #choclatatecupimg {
+        width: 60vw;
+    }
+}
+
+
+/* designing catering  */
+
+#famousfor {
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+}
+
+.cateringcardcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cateringcard {
+    width: 32vh;
+    width: 32vw;
+    margin: 4px;
+    border: 2px solid #fa6c6c;
+    background-color: wheat;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 19px;
+    margin-top: 81px;
+}
+
+#controlwidth {
+    width: 195px;
+    height: 195px;
+}
+
+.cateringimg {
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 23;
+    top: -80px;
+}
+
+@media(max-width:750px) {
+    .cateringimg {
+        width: 30vw;
+    }
+    .cateringcardcont {
+        flex-direction: column;
+    }
+    .cateringcard {
+        width: 90vw;
+    }
+}
+
+@media(max-width:410px) {
+    .cateringimg {
+        top: 0;
+    }
+    #controlwidth {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+/* designing all time delivery  */
+
+#alltime {
+    margin-top: 20px;
+    border: 1px solid grey;
+    background: url(../res/banner.png);
+}
+
+#alltimeheading {
+    font-style: italic;
+    font-size: 3rem;
+    font-family: cursive;
+    margin-top: 1cm;
+}
+
+#alltineorder {
+    display: block;
+    margin: auto;
+    padding: 8px 40px;
+    text-align: center;
+    background-color: rgba(255, 68, 0, 0.418);
+    border-radius: 10px;
+    border: 2px solid gainsboro;
+    cursor: pointer;
+    margin-top: 3cm;
+    margin-bottom: 2cm;
+}
+
+
+/* footer  */
+
+#footer {
+    background-color: black;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}

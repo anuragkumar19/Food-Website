@@ -1,0 +1,174 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* css reset and set font  */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu', 'Baloo Bhaina 2', cursive;
+}
+
+
+/* hyperlink underline removal and color change of link  */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* universal classes  */
+
+.textcenter {
+    text-align: center;
+}
+
+
+/* designing our nav bar  */
+
+#navcontainer a {
+    color: white;
+}
+
+#navcontainer a :hover {
+    background: #000;
+    border-radius: 0.5cm;
+}
+
+#navbar {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #f5a81e;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+}
+
+#logo {
+    width: 36px;
+    height: 36px;
+    padding: 2px 10px;
+}
+
+#navcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navitem {
+    padding: 20px 15px;
+}
+
+
+/* making navbar responsive  */
+
+@media(max-width:410px) {
+    .navitem {
+        padding: 10px 5px;
+    }
+    #navbar {
+        display: block;
+    }
+    #logo {
+        display: block;
+        margin: auto;
+    }
+    #navcontainer a :hover {
+        background: #000;
+        border-radius: 0.25cm;
+    }
+}
+
+
+/* decorating heading and paragraph of order now  */
+
+#ordernowcontainer1 {
+    background: url("../res/orderheadingbg.jpg");
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    background-position: center center;
+}
+
+
+/* #ordernowheading {} */
+
+#prime1 {
+    font-size: 3rem;
+    font-family: cursive;
+    color: white;
+    font-weight: bolder;
+}
+
+#headingkapara-1 {
+    margin-top: 0.5cm;
+}
+
+.headingkapara {
+    font-size: 1.56rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* designing the cards of order now  */
+
+.foodcardscontainer {
+    display: grid;
+}
+
+.foodcard {
+    display: inline-flex;
+    flex-direction: column;
+    width: 90vw;
+    overflow: hidden;
+    border: 2px solid gray;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0.5cm auto;
+    border-radius: 1cm;
+}
+
+.foodcardimg {
+    width: 28vw;
+}
+
+.cardheading {
+    font-size: 4rem;
+}
+
+.addtocart {
+    padding: 6px 15px;
+    background-color: peachpuff;
+    border: 2px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media(max-width:560px) {
+    .foodcardimg {
+        width: 40vw;
+    }
+    .foodcard {
+        width: 80vw;
+    }
+}
+
+
+/* footer  */
+
+#footer {
+    background-color: black;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
