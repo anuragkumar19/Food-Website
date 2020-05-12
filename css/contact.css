@@ -155,7 +155,7 @@ body {
     color: white;
     text-align: center;
     padding: 4px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     right: 0;
     left: 0;
